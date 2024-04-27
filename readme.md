@@ -60,7 +60,7 @@ print(offsetX, offsetY, offsetZ)
 # ----------------------------------------------------------------------
 
 
-# Example `GetVehicleOffset` functions
+# Example `GetVehicleOffset` function
 ```lua
 local offsetX, offsetY, offsetZ = exports['mh-modelnames']:GetVehicleOffset(vehicle)
 print(offsetX, offsetY, offsetZ)
