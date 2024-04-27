@@ -47,7 +47,10 @@ print(model)
 ```
 
 
-# Example `GetVehicleOffsetX/GetVehicleOffsetY/GetVehicleOffsetZ` functions
+# Example To Get an offset of a vehicle
+- GetVehicleOffsetX function
+- GetVehicleOffsetY function
+- GetVehicleOffsetZ function
 ```lua
 local offsetX = exports['mh-modelnames']:GetVehicleOffsetX(vehicle)
 local offsetY = exports['mh-modelnames']:GetVehicleOffsetY(vehicle)
