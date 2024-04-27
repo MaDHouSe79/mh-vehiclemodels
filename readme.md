@@ -36,13 +36,30 @@
 - you can use this to save in to a database.
 
 # Install
-- make sure you start this resources before qb or esx framework
+- make sure you start this resources before qc-core or esx
 
 # Example `GetModelName` function
 -- Use this if a spawnname does nog match with the one you want.
 -- with this you replace the name to the correct spawnname.
 ```lua
 local model = exports['mh-modelnames']:GetModelName(vehicle)
-print(model) -- displays the real model spawn name.
+print(model)
+```
+
+
+# Example `GetVehicleOffsetX/GetVehicleOffsetY/GetVehicleOffsetZ` functions
+```lua
+local offsetX = exports['mh-modelnames']:GetVehicleOffsetX(vehicle)
+local offsetY = exports['mh-modelnames']:GetVehicleOffsetY(vehicle)
+local offsetZ = exports['mh-modelnames']:GetVehicleOffsetZ(vehicle)
+print(offsetX, offsetY, offsetZ)
+```
+# ----------------------------------------------------------------------
+
+
+# Example `GetVehicleOffset` functions
+```lua
+local offsetX, offsetY, offsetZ = exports['mh-modelnames']:GetVehicleOffset(vehicle)
+print(offsetX, offsetY, offsetZ)
 ```
 # ----------------------------------------------------------------------
