@@ -36,7 +36,7 @@
 - you can use this to save in to a database.
 
 # Install
-- make sure you start this resources before qc-core or esx
+- make sure you start this resources before qb or esx framework
 
 # Example `GetModelName` function
 -- Use this if a spawnname does nog match with the one you want.
