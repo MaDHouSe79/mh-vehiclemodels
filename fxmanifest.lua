@@ -7,4 +7,5 @@ version '1.0'
 
 shared_scripts {'config.lua'}
 client_scripts {'client/main.lua'}
+server_scripts {'server/update.lua'}
 lua54 'yes'
