@@ -19,3 +19,39 @@ local function GetModelName(vehicle)
 end
 
 exports('GetModelName', GetModelName)
+
+local function GetVehicleOffsetX(vehicle)
+    local offset = 0.0
+    local model = GetModelName(vehicle)
+    if (Config.Vehicles[model]) then offset = Config.VehiclesOffset[model].x end
+    return offset
+end
+exports('GetVehicleOffsetX', GetVehicleOffsetX)
+
+local function GetVehicleOffsetY(vehicle)
+    local offset = 0.0
+    local model = GetModelName(vehicle)
+    if (Config.Vehicles[model]) then offset = Config.VehiclesOffset[model].y end
+    return offset
+end
+exports('GetVehicleOffsetY', GetVehicleOffsetY)
+
+local function GetVehicleOffsetZ(vehicle)
+    local offset = 0.0
+    local model = GetModelName(vehicle)
+    if (Config.Vehicles[model]) then offset = Config.VehiclesOffset[model].z end
+    return offset
+end
+exports('GetVehicleOffsetZ', GetVehicleOffsetZ)
+
+local function GetVehicleOffset(vehicle)
+    local offsetX, offsetY, offsetZ = 0.0, 0.0, 0.0
+    local model = GetModelName(vehicle)
+    if (Config.Vehicles[model]) then 
+        offsetX = Config.VehiclesOffset[model].x
+        offsetY = Config.VehiclesOffset[model].y
+        offsetZ = Config.VehiclesOffset[model].z
+    end
+    return offsetX, offsetY, offsetZ
+end
+exports('GetVehicleOffset', GetVehicleOffset)
