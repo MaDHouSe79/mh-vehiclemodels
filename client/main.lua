@@ -1,3 +1,6 @@
+--- Get Model Name
+---@param vehicle entity
+---@return string
 local function GetModelName(vehicle)
     local newName = nil
     local model = GetDisplayNameFromVehicleModel(GetEntityModel(vehicle))
@@ -20,30 +23,42 @@ end
 
 exports('GetModelName', GetModelName)
 
+--- Get Vehicle Offset X
+---@param vehicle entity
+---@return number
 local function GetVehicleOffsetX(vehicle)
     local offset = 0.0
     local model = GetModelName(vehicle)
-    if (Config.Vehicles[model]) then offset = Config.VehiclesOffset[model].x end
+    if (Config.VehiclesOffset[model]) then offset = Config.VehiclesOffset[model].x end
     return offset
 end
 exports('GetVehicleOffsetX', GetVehicleOffsetX)
 
+--- Get Vehicle Offset Y
+---@param vehicle entity
+---@return number
 local function GetVehicleOffsetY(vehicle)
     local offset = 0.0
     local model = GetModelName(vehicle)
-    if (Config.Vehicles[model]) then offset = Config.VehiclesOffset[model].y end
+    if (Config.VehiclesOffset[model]) then offset = Config.VehiclesOffset[model].y end
     return offset
 end
 exports('GetVehicleOffsetY', GetVehicleOffsetY)
 
+--- Get Vehicle Offset Z
+---@param vehicle entity
+---@return number
 local function GetVehicleOffsetZ(vehicle)
     local offset = 0.0
     local model = GetModelName(vehicle)
-    if (Config.Vehicles[model]) then offset = Config.VehiclesOffset[model].z end
+    if (Config.VehiclesOffset[model]) then offset = Config.VehiclesOffset[model].z end
     return offset
 end
 exports('GetVehicleOffsetZ', GetVehicleOffsetZ)
 
+--- Get Vehicle Offset
+---@param vehicle entity
+---@return number
 local function GetVehicleOffset(vehicle)
     local offsetX, offsetY, offsetZ = 0.0, 0.0, 0.0
     local model = GetModelName(vehicle)
