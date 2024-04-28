@@ -15,6 +15,7 @@ Config.Names = {
     { wrong = "dominato8", good = "dominator8" },
     { wrong = "landstlkr2", good = "landstalker2" },
     { wrong = "cogcabri", good = "cogcabrio" },
+    { wrong = "feltzer", good = "feltzer2" },
     -- you can add more here
 }
 
