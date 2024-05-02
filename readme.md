@@ -42,7 +42,7 @@
 -- Use this if a spawnname does nog match with the one you want.
 -- with this you replace the name to the correct spawnname.
 ```lua
-local model = exports['mh-modelnames']:GetModelName(vehicle)
+local model = exports['mh-vehiclemodels']:GetModelName(vehicle)
 print(model)
 ```
 
@@ -52,9 +52,9 @@ print(model)
 - function `GetVehicleOffsetY` -- front/back
 - function `GetVehicleOffsetZ` -- up/down
 ```lua
-local offsetX = exports['mh-modelnames']:GetVehicleOffsetX(vehicle)
-local offsetY = exports['mh-modelnames']:GetVehicleOffsetY(vehicle)
-local offsetZ = exports['mh-modelnames']:GetVehicleOffsetZ(vehicle)
+local offsetX = exports['mh-vehiclemodels']:GetVehicleOffsetX(vehicle)
+local offsetY = exports['mh-vehiclemodels']:GetVehicleOffsetY(vehicle)
+local offsetZ = exports['mh-vehiclemodels']:GetVehicleOffsetZ(vehicle)
 print(offsetX, offsetY, offsetZ)
 ```
 # ----------------------------------------------------------------------
@@ -62,7 +62,7 @@ print(offsetX, offsetY, offsetZ)
 
 # Example `GetVehicleOffset` function
 ```lua
-local offsetX, offsetY, offsetZ = exports['mh-modelnames']:GetVehicleOffset(vehicle)
+local offsetX, offsetY, offsetZ = exports['mh-vehiclemodels']:GetVehicleOffset(vehicle)
 print(offsetX, offsetY, offsetZ)
 ```
 # ----------------------------------------------------------------------
